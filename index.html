@@ -28,17 +28,30 @@
         .navbar-nav {
             margin-right: 20px!important;
             margin-left: auto;
+            padding-left: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none!important;
+            color: #666666!important;
+        }
+
+        .nav-link:hover {
+            text-decoration: none;
+            font-weight: bold!important;
+            color: #4aaaa5!important;
         }
 
         .footer {
             position: absolute;
             bottom: 0;
+            /* add media query to remove bottom:0 @ 767px */
             width: 100%;
             height: 60px;
-            line-height: 60px;
             background-color: #666666;
             text-align: center;
             border-top: #4aaaa5 solid 10px;
+            z-index: 3;
         }
 
         .text-muted {
@@ -67,9 +80,9 @@
             font-family: Arial, Helvetica, sans-serif;
             color: #777777;
             margin-top: 20px;
-            padding-top: 30px;
-            padding-bottom: 20px;
-            /* width: 960px; */
+            margin-bottom: 20px;
+            padding: 30px 20px;
+            box-sizing: border-box;
         }
 
         a {
@@ -89,11 +102,23 @@
             padding-right: 20px;
         }
 
+        @media screen and (max-width: 767px) {
+            .footer {
+                position: absolute;
+                bottom: auto;
+                width: 100%;
+                height: 60px;
+                background-color: #666666;
+                text-align: center;
+                border-top: #4aaaa5 solid 10px;
+                z-index: 3;
+            }
+        }
+   
     </style>
 </head>
 
 <body>
-    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand">Sherif Fattal</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,7 +127,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -138,6 +163,8 @@
             <span class="text-muted">Copyright ©</span>
         </div>        
     </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
