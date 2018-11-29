@@ -1,13 +1,9 @@
-
 /* New */
 .row {
     align-items: center;
 }
 .me {
     width: 200px;
-}
-#name-header {
-    /* float: right; */
 }
 .card {
     /* padding: 4rem 2rem; */
@@ -18,7 +14,6 @@
     margin: 30px;
 }
 #carouselExampleIndicators {
-    width: 500px;
     background-color: #e9ecef;
     margin: 30px;
 }
@@ -31,7 +26,7 @@
     color: black;
     text-align: center;
 }
-.pic1, .pic2, .pic3, .pic4, .pic5 {
+/* .pic1, .pic2, .pic3, .pic4, .pic5 {
     height: 200px; 
     width:250px;
-}
+} */
