@@ -1,2 +1,2 @@
 # Portfolio
-https://sfattal.github.io/Portfolio/
+https://sfattal.github.io/sfattal/
