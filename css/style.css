@@ -9,13 +9,15 @@ Tags: business, color skins, corporate, css3, digital, flat, layered psd, modern
 html, body {
   height: 100%;
 }
-
 body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size:14px;
 	line-height:24px;
 	color:#666;
 	background:#f1f0f0;
+}
+div.main-head {
+	margin-top: 50px;
 }
 img {
 	max-width: 100%;
@@ -30,13 +32,17 @@ a {
 	transition: all 0.15s linear;
 }
 a:hover, a:focus {
-	color:#333;
+	color:white;
 	text-decoration: none;
 }
 a, a:focus {
 	outline:0;
 	outline-offset:0;
 	text-decoration:none;
+}
+.langSkills {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 /* === Typography === */
 h1, h2, h3, h4, h5, h6 {
@@ -133,95 +139,7 @@ header.subpage {
 	border:none;
 }
 
-/* === Logo === */
-.container-fluid {
-    padding-left: 100px;
-    padding-right: 100px;
-    position: relative;
-    z-index: 11;
-}
-.navmenu-brand:after{
-	position:absolute;
-	width:53px;
-	background:#fbb829;
-	height:53px;
-	content:"";
-	z-index:-1;
-	left:0;
-	top:0;
-}
-.navmenu-brand{
-	margin:0;
-	position:relative;
-	padding:15px 10px 15px 5px;
-	border:2px solid #fbb829;
-	display:inline-block;
-}
-.page-content{
-	padding:100px 0;
-	position:relative;
-	overflow:hidden;
-}
-.page-content.no-pad{
-	padding:70px 0;
-}
-.page-content#home{
-	padding-top:0;
-}
-.page-content.zero-pad{
-	padding-bottom:0;
-}
-.divider-spacer{
-	height:60px;
-}
-/* === End === */
 
-/* === Search Box === */
-.search-box{
-	background:#FFF;
-	padding:0 15px;
-	
-}
-.search-box input{
-	background:#FFF;	
-	color:#999;
-	padding:12px 0;
-	height:auto;
-	font-style:italic;
-	
-	border:none;	
-	border-radius:0;
-	-moz-border-radius:0;
-	-webkit-border-radius:0;
-	box-shadow:none;
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
-}
-.search-box input:focus{
-	box-shadow:none;
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
-}
-.form-control::-moz-placeholder{
-	color:#999;
-	font-style:italic;
-}
-.search-box button, .search-box button:hover, .search-box button:focus{
-	background:none;
-	padding:6px 3px;
-	border:none;
-	box-shadow:none;
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
-	-webkit-transition: all 0.15s linear;
-	-moz-transition: all 0.15s linear;
-	-o-transition: all 0.15s linear;
-	transition: all 0.15s linear;
-}
-.search-box button{
-	color:#999;	
-}
-/* === End === */
 
 /* === Sidebar Menu === */
 .navbar {
@@ -536,79 +454,7 @@ header.subpage {
 }
 /* === End === */
 
-/* === Work Experience === */
-.experience-wrap{
-	margin:0;
-	position:relative;
-}
-.experience:after, .education:after{
-	position:absolute;
-	color:#e2e2e2;
-	font-size:60px;
-	text-align:center;
-	left:0;
-	width:110px;
-	font-family:'FontAwesome';
-	bottom:30px;
-}
-.experience:after{
-	content:"\f0b1";
-}
-.education:after{
-	content:"\f19d";
-}
-.date-wrap{
-	float:left;	
-	position:relative;
-	background:#fbb829;
-	letter-spacing:0.1em;
-	color:#FFF;
-	padding:10px;
-	height:69px;
-	line-height:24px;
-	width:110px;
-	text-align:center;
-}
-.date-wrap:after{
-	position:absolute;
-	content:"-";
-	left:50%;
-	top:23px;
-	font-size:18px;
-	margin:0 0 0 -2px;
-}
-.text-wrap{
-	overflow:hidden;
-	border-left:1px solid #fbb829;	
-}
-.text-wrap h4, .text-wrap h5{	
-	line-height:12px;
-}
-.text-wrap h4{
-	letter-spacing:0.1em;
-	color:#373737;
-	margin:0 0 10px 0;
-	font-size:15px;
-}
-.text-wrap h5{
-	color:#999999;
-	font-size:13px;
-	margin:0;
-}
-.organization-name{
-	background:#f8f8f8;
-	padding:17px 20px;
-	border-bottom:1px solid #fbb829;
-}
-.text-inner{
-	padding:20px;
-}
 
-.recognitions-wrap{
-	font-size:18px;
-	font-style:italic;
-}
-/* === End === */
 
 /* === Skills === */
 .piecharts h2 {
@@ -710,36 +556,7 @@ header.subpage {
 }
 /* === End === */
 
-/* === Awards === */
-.awards-wrap{
-	padding:0 0 40px 0;
-}
-.font-icon{
-	float:left;
-	font-size:24px;
-	margin:5px 15px 0 0;
-	color:#2a8fbd;
-}
-.awards-text{
-	overflow:hidden;
-	padding:20px;
-	background:#f8f8f8;
-}
-.awards-text h3 span{
-	color:#fbb829 ;
-}
-.education-wrap .text h3, .awards-text h3{
-	margin-bottom:0;
-	font-size:15px;
-	color:#373737;
-	letter-spacing:0.1em;
-}
-.education-wrap .text h5, .awards-text h5{
-    color: #999999;
-    font-size: 13px;
-    margin-top: 0;
-}
-/* === End === */
+
 
 #grid-container .cbp-l-inline{
 	margin:0;
@@ -768,6 +585,7 @@ header.subpage {
 	background:#373737;
 	padding:30px 0;
 	font-size:13px;
+	margin-top: 40px;
 }
 .red{
 	color:#F00;
@@ -1143,7 +961,6 @@ header.subpage {
 	font-weight:400;
 }
 .styleswitcher .arrow-box {
-	backgtop:0;
 	left:-50px;
 	position: absolute;
 }
@@ -1153,7 +970,6 @@ header.subpage {
 	width:50px;
 	height:50px;
 	display:table-cell;
-	vertical-align:middle;
 	background:#FFF;
 	text-align:center;
 	box-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
