@@ -124,7 +124,7 @@
 	        }
 	    });
 		
-		$('#hobbie-slider').owlCarousel({
+		$('#software-slider').owlCarousel({
 			center: false,
 			items:2,
 			loop:true,
@@ -144,26 +144,46 @@
 				}
 			}
 		});
-		$('#recognitions-slider').owlCarousel({
+		$('#frameworks-slider').owlCarousel({
 			center: false,
-			items:1,
+			items:2,
 			loop:true,
-			margin:30,
-			nav:false,
-			dots:true,
-			navText: ['&#xf104;', '&#xf105']
-		});
-		$('#testmonial-slider').owlCarousel({
-			center: false,
-			items:1,
-			loop:true,
-			autoplay:true,
-			autoplayHoverPause:true,
 			margin:30,
 			nav:true,
-			dots:true,
-			navText: ['&#xf104;', '&#xf105']
+			dots:false,
+			navText: ['&#xf104;', '&#xf105'],
+			responsive:{
+				600:{
+					items:4,
+				},
+				1000:{
+					items:4,
+				},
+				1600:{
+					items:6,
+				}
+			}
 		});
+		// $('#recognitions-slider').owlCarousel({
+		// 	center: false,
+		// 	items:1,
+		// 	loop:true,
+		// 	margin:30,
+		// 	nav:false,
+		// 	dots:true,
+		// 	navText: ['&#xf104;', '&#xf105']
+		// });
+		// $('#testmonial-slider').owlCarousel({
+		// 	center: false,
+		// 	items:1,
+		// 	loop:true,
+		// 	autoplay:true,
+		// 	autoplayHoverPause:true,
+		// 	margin:30,
+		// 	nav:true,
+		// 	dots:true,
+		// 	navText: ['&#xf104;', '&#xf105']
+		// });
 		
 		(function($, window, document, undefined) {
 		'use strict';
