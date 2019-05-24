@@ -1,0 +1,63 @@
+body {
+	background-color: none;
+}
+.sidenav-trigger {
+	margin: 25px;
+	position: fixed;
+}
+.sidenav-icon, nav {
+	color: black!important;
+	background-color: white;
+	box-shadow: none;
+}
+.sidenav, nav{
+	background-color: white;
+}
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+.section-about, .section-skills, .section-works {
+	color: black!important;
+	margin-top: 20px;
+}
+.about-body {
+	min-height: 220px;
+    margin: auto;
+    width: 80%;
+    line-height: 30px;
+	font-style: italic;
+	padding: 3% 0;
+}
+.skills-software-wrapper, .skills-frameworks-wrapper, .skills-databases-wrapper {
+	width: 33.3%;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	margin: auto;
+}
+.skills-icon {
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+	vertical-align: middle;
+}
+.header {
+	color: black;
+}
+.works-grid {
+	color: black;
+}
+.card {
+	width: 47%;
+	float: left;
+	overflow: hidden;
+	margin: 10px;
+}
+.page-footer {
+	padding-top: 0px;
+    color: #fff;
+	background-color: lightgrey;
+	text-align: center;
+}
